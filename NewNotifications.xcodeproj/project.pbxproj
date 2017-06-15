@@ -13,6 +13,7 @@
 		6368DF601EF2438E008A9975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6368DF5F1EF2438E008A9975 /* Assets.xcassets */; };
 		6368DF631EF2438E008A9975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6368DF611EF2438E008A9975 /* LaunchScreen.storyboard */; };
 		6368DF6E1EF2438E008A9975 /* NewNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6368DF6D1EF2438E008A9975 /* NewNotificationsTests.swift */; };
+		6368DF791EF24D5B008A9975 /* tenor.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6368DF781EF24D5B008A9975 /* tenor.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6368DF691EF2438E008A9975 /* NewNotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewNotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6368DF6D1EF2438E008A9975 /* NewNotificationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotificationsTests.swift; sourceTree = "<group>"; };
 		6368DF6F1EF2438E008A9975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6368DF781EF24D5B008A9975 /* tenor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tenor.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,11 @@
 		6368DF571EF2438E008A9975 /* NewNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				6368DF7E1EF24D84008A9975 /* Model */,
+				6368DF7C1EF24D6F008A9975 /* Controller */,
+				6368DF7B1EF24D66008A9975 /* View */,
+				6368DF7A1EF24D5E008A9975 /* Resources */,
 				6368DF581EF2438E008A9975 /* AppDelegate.swift */,
-				6368DF5A1EF2438E008A9975 /* ViewController.swift */,
 				6368DF5C1EF2438E008A9975 /* Main.storyboard */,
 				6368DF5F1EF2438E008A9975 /* Assets.xcassets */,
 				6368DF611EF2438E008A9975 /* LaunchScreen.storyboard */,
@@ -94,6 +99,36 @@
 				6368DF6F1EF2438E008A9975 /* Info.plist */,
 			);
 			path = NewNotificationsTests;
+			sourceTree = "<group>";
+		};
+		6368DF7A1EF24D5E008A9975 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6368DF781EF24D5B008A9975 /* tenor.gif */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6368DF7B1EF24D66008A9975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6368DF7C1EF24D6F008A9975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6368DF5A1EF2438E008A9975 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6368DF7E1EF24D84008A9975 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6368DF631EF2438E008A9975 /* LaunchScreen.storyboard in Resources */,
+				6368DF791EF24D5B008A9975 /* tenor.gif in Resources */,
 				6368DF601EF2438E008A9975 /* Assets.xcassets in Resources */,
 				6368DF5E1EF2438E008A9975 /* Main.storyboard in Resources */,
 			);
