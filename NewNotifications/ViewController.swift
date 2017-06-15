@@ -7,19 +7,36 @@
 //
 
 import UIKit
+import UserNotifications
+
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        
+        //1. request permission
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: {(granted, error) in
+            
+            if granted {
+                print("notification access granted")
+            } else {
+                print(error?.localizedDescription as Any)
+            }
+        })
+        }
+    
+    
+    
+    @IBAction func notifyButtonTapped(sender: UIButton) {
+   
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func scheduleNotification(inSeconds: TimeInterval, completion: (_ Success: Bool) -> ()) {
+        
     }
-
-
+    
 }
 
